@@ -27,7 +27,7 @@ blueprint:
               manufacturer: Blueforcer
               model: AWTRIX 3
     app_name:
-      name: AWTRIX Applicaiton name
+      name: AWTRIX Application name
       description: This is the app name listed in the MQTT topic - it should be unique
       selector:
         text:
@@ -38,8 +38,8 @@ blueprint:
       selector:
         entity:
           filter:
-            - integration: mobile_app
-              device_class: battery
+            - device_class: 
+                battery
     message_text:
       name: Text to display
       description: Text to be displayed on AWTRIX
